@@ -25,10 +25,15 @@
 
 
     i) Add
+    
     ii) Subtract
+    
     iii) Divide
+    
     iv) Multiply
+    
     v) Power
+    
     vi) Mod
     
 
