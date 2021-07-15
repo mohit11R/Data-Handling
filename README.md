@@ -6,7 +6,7 @@
 2) Numpy tutorial -- https://www.youtube.com/watch?v=vh525RjO6C0&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe&index=7
 
 
-### Numpy -- Data Processing Library 
+### Numpy -- Array Processing Library 
 
 <b>Inbuilt Functions</b>
 
