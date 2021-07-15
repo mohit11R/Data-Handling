@@ -21,7 +21,9 @@
 9) Concatenate -- Two or more arrays can be concatenated together using the concatenate functions with a tuple of the array to be joined and for 2-D array we can also specify the axis .
 10) Identity -- It returns an identity array.
 11) eye -- it returns a 2-D array with 1's as the diagonal and 0's elsewhere.
-12) Mathematics Operators -- +,-,/,//,%,power 
+12) Mathematics Operators -- +, -, /, //, %, power 
+
+
     i) Add
     ii) Subtract
     iii) Divide
