@@ -23,20 +23,11 @@
 11) eye -- it returns a 2-D array with 1's as the diagonal and 0's elsewhere.
 12) Mathematics functions--  
 
-    1) Add
-    2) Subtract
-    3) Divide
-    4) Multiply
-    5) Power
-    6) Mod
-    7) Rint
-    8) Min
-    9) Max
-    10) Mean
-    11) Variance
-    12) Standard Deviation
-    13) Dot and Cross product of two arrays
-    14) Inner and Outer product of two arrays
+    1) Add, Subtract, Divide, Multiply, Power, Mod, Rint
+    2) Min , Max 
+    3) Mean , Variance , Standard Deviation
+    4) Dot and Cross product of two arrays
+    5) Inner and Outer product of two arrays
 
 13) Polynomials functions --
     
@@ -45,7 +36,13 @@
     3) Polyint -- It returns the derivative of the specified order of a polynomial.
     4) Polyder -- It returns the derivative of the specified order of a polynomail.
     5) Polyval -- It evalutes the ploynomail at specific value.
-    6) Polyfit -- It fits a polynomial of a specified order to a set of data using a least-squares approach
+    6) Polyfit -- It fits a polynomial of a specified order to a set of data using a least-squares approach.
+
+14) Linear Algebra --
+    
+    1) Linalg.det -- It computes the determinant of an array.
+    2) Linalg.eig -- It computes the eigenvalues and right eigenvectors of a square array.
+    3) Linalg.inv -- It computes the (multiplicative) inverse of a matrix.
     
    
     
