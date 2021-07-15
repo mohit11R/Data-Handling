@@ -16,4 +16,17 @@
 4) Copy -- Copy function helps that it will not change original array after copy.
 5) Ones -- It will create array of values with 1 and it also take datatype.
 6) Zeroes -- It will create array of values with 0 and it also take datatype.
+7) Transpose -- We can generate the transpostion of an array using this and it will not affect the original array but it will create a new array.
+8) Flattern -- The Tool flatten creates a copy of the input array flattened to one dimension.
+9) Concatenate -- Two or more arrays can be concatenated together using the concatenate functions with a tuple of the array to be joined and for 2-D array we can also specify the axis .
+10) Identity -- It returns an identity array.
+11) eye -- it returns a 2-D array with 1's as the diagonal and 0's elsewhere.
+12) Mathematics Operators -- +,-,/,//,%,power 
+    i) Add
+    ii) Subtract
+    iii) Divide
+    iv) Multiply
+    v) Power
+    vi) Mod
+    
 
