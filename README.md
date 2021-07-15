@@ -23,7 +23,6 @@
 11) eye -- it returns a 2-D array with 1's as the diagonal and 0's elsewhere.
 12) Mathematics functions--  
 
-
     1) Add
     2) Subtract
     3) Divide
@@ -39,7 +38,14 @@
     13) Dot and Cross product of two arrays
     14) Inner and Outer product of two arrays
 
-
+13) Polynomials functions --
+    
+    1) Poly -- It returns the coefficient of a polynomial with the given sequence of roots.
+    2) Roots -- It returns the roots of a polynomial with the given coefficient.
+    3) Polyint -- It returns the derivative of the specified order of a polynomial.
+    4) Polyder -- It returns the derivative of the specified order of a polynomail.
+    5) Polyval -- It evalutes the ploynomail at specific value.
+    6) Polyfit -- It fits a polynomial of a specified order to a set of data using a least-squares approach
     
    
     
