@@ -3,7 +3,7 @@
 ### Practice And Resources
 
 1) Hackerrank -- https://www.hackerrank.com/domains/python?filters%5Bsubdomains%5D%5B%5D=numpy
-2) Numpy tutorial -- https://www.youtube.com/watch?v=vh525RjO6C0&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe&index=7
+2) Numpy documentation -- https://numpy.org/doc/
 
 
 ### Numpy -- Array Processing Library 
