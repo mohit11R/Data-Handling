@@ -50,4 +50,71 @@
 
 ## Pandas Library 
 
+Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structure and data analysis tools for the python programming language.
+
+```
+<!-- Import libraries              -->
+             import pandas as pd
+             import numpy as np
+```
+
+#### Data Frames 
+
+1) A two-dimensional labeled data structure with columns of potentially different types.
+2) It Take 3 parameters -- data , Index , Columns.
+
+``` 
+Syntax
+
+df = pd.DataFrame(data,Index,Column)
+
+```
+
+#### Data Series 
+
+1) Pandas Series is a one-dimensional labeled array capable of holding data of any type (integer, string, float, python objects, etc.).
+2) It take two parameter -- data , index.
+
+```
+Syntax
+
+df = pd.Series(data,index)
+
+```
+
+
+Inbulid Functions and Methods
+
+1) **.head()** -- It will give the top rows values.
+2) **.loc** -- It is label-based, which means that you have to specify rows and columns based on their row and column labels.
+3) **.iloc** -- It is integer position-based, so you have to specify rows and columns by their integer position values (0-based integer position).
+4) **.value** -- It will convert data Frame into array.
+5) **.isnull** -- It will check null values in data.
+6) **sum()** -- It will give sum of specific data values.
+7) **.value_counts()** -- returns object containing counts of unique values.
+8) **.unique()** -- It is used to get unique values of Series object.
+9) **.info()** -- It will give information about data like rows , columns etc.
+10) **.describe()** -- is used for calculating some statistical data like percentile, mean and std of the numerical values of the Series or DataFrame. It analyzes both numeric and object series and also the DataFrame column sets of mixed data types.
+11) **.corr()** -- It is used to find the pairwise correlation of all columns in the dataframe.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
