@@ -4,6 +4,7 @@
 
 1) Hackerrank -- https://www.hackerrank.com/domains/python?filters%5Bsubdomains%5D%5B%5D=numpy
 2) Numpy documentation -- https://numpy.org/doc/
+3) Pandas documentation -- https://pandas.pydata.org/docs/
 
 
 ### Numpy -- Array Processing Library 
