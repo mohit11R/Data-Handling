@@ -96,6 +96,56 @@ Inbulid Functions and Methods
 9) **.info()** -- It will give information about data like rows , columns etc.
 10) **.describe()** -- is used for calculating some statistical data like percentile, mean and std of the numerical values of the Series or DataFrame. It analyzes both numeric and object series and also the DataFrame column sets of mixed data types.
 11) **.corr()** -- It is used to find the pairwise correlation of all columns in the dataframe.
+12) **.dropna(axis = 0 or 1)** -- It is used to remove missing values.
+13) **.reindex()** -- It will replace index with new index values.
+14) **.isna()** -- It is used to detect missing values.
+15) **.fillna()** -- It is used to fill NA/NaN values using the specified method.
+16) **.notna()** -- It detects existing/ non-missing values in the dataframe.
+
+
+#### Reading different data Sources with the help of pandas
+
+##### CSV 
+
+It contains comma seperated values in the file.
+
+```
+<!-- import  -->
+from io import StringIO, BytesIO
+```
+
+1) Reading CSV file
+
+      StringIO and ByteIO --  module an in-memory file-like object. This object can be used as input or output to the most function that would expect a standard file object.
+     
+```
+pd.read_csv(StringIO(data))
+```
+
+2) Read from specific columns 
+
+```
+df = pd.read_csv( StringIo(data) , usecols = None)
+```
+
+3) Convert data into CSV
+
+```
+df.to_csv(file)
+```
+
+4) Datatype of CSV data
+
+```
+df=pd.read_csv(StringIO(data),dtype=object)
+```
+
+5) Escapechar helps to remove a characters from data
+
+```
+pd.read_csv(StringIO(data),escapechar='\\')
+```
+
 
 
 
