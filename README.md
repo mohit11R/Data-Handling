@@ -105,7 +105,7 @@ Inbulid Functions and Methods
 
 #### Reading different data Sources with the help of pandas
 
-##### CSV 
+##### **CSV** 
 
 It contains comma seperated values in the file.
 
@@ -147,6 +147,67 @@ pd.read_csv(StringIO(data),escapechar='\\')
 ```
 
 
+##### **JSON** 
+
+File contains key-value pair type data.
+
+1) Reading JSON file
+
+```
+pf.read_json(data)
+```
+
+2) Convert Json to different json format
+
+```
+orient -- string, Indication of expected JSON string format
+
+df.to_json(orient="index")
+
+df.to_json(orient="records")
+```
+
+3) Convert data into json
+
+```
+df.to_json(data)
+```
+
+
+##### **HTML Content**
+
+1) Reading file
+
+```
+df = pd.read_html(data)
+```
+
+2) Matching value
+
+```
+dfs = pd.read_html(url_mcc, match='')
+```
+
+3) Convert data into html content
+
+```
+df.to_html(data)
+```
+
+
+##### **EXCEL File**
+
+1) Reading File
+
+```
+df = pd.read_excel(data)
+```
+
+2) Convert data into Excel format
+
+```
+df.to_excel(data)
+```
 
 
 
