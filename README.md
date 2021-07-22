@@ -542,17 +542,265 @@ plt.suptitle("My Graph")
 plt.show()
 ```
 
+#### Scatter
+
+1) **Creating Scatter plots**
+The scatter() function plots one dot for each observation. It needs two arrays of the same length, one for the values of the x-axis, and one for values on the y-axis
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8])
+y = np.array([99,86,87])
+
+plt.scatter(x, y , c ='g')
+plt.show()
+```
+
+2) **ColorMap**
+
+A colormap is like a list of colors, where each color has a value that ranges from 0 to 100.
+
+There are many colorbar are available.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8])
+y = np.array([99,86,87])
+colors = np.array([0, 10, 20])
+
+plt.scatter(x, y, c=colors, cmap='viridis')
+
+plt.colorbar()
+plt.show()
+```
+
+3) **Size**
+
+change the size of the dots with the s argument
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8])
+y = np.array([99,86,87])
+sizes = np.array([10, 20,30])
+
+plt.scatter(x, y, s = sizes)
+
+plt.colorbar()
+plt.show()
+```
+
+4) **Alpha**
+
+adjust the transparency of the dots with the alpha argument.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8])
+y = np.array([99,86,87])
+sizes = np.array([10, 20,30])
+
+plt.scatter(x, y, s = sizes , alpha=0.5)
+
+plt.colorbar()
+plt.show()
+```
 
 
+#### Creating Bars
+
+The bar() function takes arguments that describes the layout of the bars.
+The categories and their values represented by the first and second argument as arrays.
+
+```
+x = ["APPLES", "BANANAS"]
+y = [400, 350]
+plt.bar(x, y)
+```
+
+1) **Horizontal Bars**
+
+The bars to be displayed horizontally instead of vertically, use the barh() function.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.barh(x, y)
+plt.show()
+```
+
+2) **Color, Width and Height**
+
+```
+<!-- For horizontal bars, use height instead of width -->
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.barh(x, y,color='red', width=0.1, height=0.1)
+plt.show()
+```
+
+#### **Histograms**
+
+A histogram is a graph showing frequency distributions.
+It is a graph showing the number of observations within each given interval.
+
+The hist() function will use an array of numbers to create a histogram, the array is sent into the function as an argument.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.random.normal(170, 10, 250)
+
+plt.hist(x)
+plt.show() 
+```
 
 
+#### **Pie Charts**
 
+1) **Creating Chart**
 
+pie() function to draw pie charts
 
+```
+import matplotlib.pyplot as plt
+import numpy as np
 
+y = np.array([35, 25, 25, 15])
 
+plt.pie(y)
+plt.show()
+```
 
+2) **Labels and Colors**
 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+mycolors = ["black", "hotpink", "b", "#4CAF50"]
+
+plt.pie(y, labels = mylabels, colors = mycolors)
+plt.show()
+```
+
+3) **Start Angle**
+
+The default start angle is at the x-axis, but you can change the start angle by specifying a startangle parameter.
+
+The startangle parameter is defined with an angle in degrees, default angle is 0.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+
+plt.pie(y, labels = mylabels, startangle = 90)
+plt.show() 
+```
+
+4) **Explode**
+
+The explode parameter, if specified, and not None, must be an array with one value for each wedge.
+Each value represents how far from the center each wedge is displayed.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+myexplode = [0.2, 0, 0, 0]
+
+plt.pie(y, labels = mylabels, explode = myexplode)
+plt.show() 
+```
+
+5) **Shadow** 
+
+Add a shadow to the pie chart by setting the shadows parameter to True.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+myexplode = [0.2, 0, 0, 0]
+
+plt.pie(y, labels = mylabels, explode = myexplode, shadow = True)
+plt.show()
+```
+
+6) **Legend and With Header**
+
+To add a list of explanation for each wedge, use the legend() function.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+
+plt.pie(y, labels = mylabels)
+plt.legend(title="Four Fruits")
+plt.show() 
+```
+
+#### **Box Plot**
+
+A Box Plot is also known as Whisker plot is created to display the summary of the set of data values having properties like minimum, first quartile, median, third quartile and maximum.
+
+1) **Creating Box Plot
+
+```
+matplotlib.pyplot.boxplot(data, notch=None, vert=None, patch_artist=None, widths=None)
+
+```
+
+2) Attributes and Values
+
+      1) Data -- array or sequence of array to be plotted
+      2) notch -- optional parameter accepts boolean values
+      3) vert -- optional parameter accepts boolean values false and true for horizontal and vertical plot respectively
+      4) bootstrap -- optional parameter accepts int specifies intervals around notched boxplots
+      5) usermedians -- optional parameter accepts array or sequence of array dimension compatible with data
+      6) position -- optional parameter accepts array and sets the position of boxes
+      7) widths -- optional parameter accepts array and sets the width of boxes
+      8) patch_artist -- optional parameter having boolean value
+      9) Labels -- sequence of strings sets label for each dataset
+      10) meanline -- optional having boolean value try to render meanline as full width of box
+      11) order -- optional parameter sets the order of the boxplot
+
+```
+data = [np.random.normal(0, std, 100) for std in range(1, 4)]
+
+# rectangular box plot
+plt.boxplot(data,vert=True,patch_artist=False);
+```
 
 
 
