@@ -487,8 +487,60 @@ plt.plot(x, y)
 plt.show()
 ```
 
+6) **Subplots**
 
+With the subplots() function you can draw multiple plots in one figure
 
+1) The subplots() function takes three arguments that describes the layout of the figure.
+2) The layout is organized in rows and columns, which are represented by the first and second argument.
+3) The third argument represents the index of the current plot.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+#plot 1:
+x = np.array([0, 1, 2, 3])
+y = np.array([3, 8, 1, 10])
+
+plt.subplot(1, 2, 1)
+plt.plot(x,y)
+
+#plot 2:
+x = np.array([0, 1, 2, 3])
+y = np.array([10, 20, 30, 40])
+
+plt.subplot(1, 2, 2)
+plt.plot(x,y)
+
+plt.show()
+```
+
+**Super Title**
+
+Add a title to the entire figure with the suptitle() function.
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+#plot 1:
+x = np.array([0, 1, 2, 3])
+y = np.array([3, 8, 1, 10])
+
+plt.subplot(1, 2, 1)
+plt.plot(x,y)
+
+#plot 2:
+x = np.array([0, 1, 2, 3])
+y = np.array([10, 20, 30, 40])
+
+plt.subplot(1, 2, 2)
+plt.plot(x,y)
+
+plt.suptitle("My Graph")
+plt.show()
+```
 
 
 
