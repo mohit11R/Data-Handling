@@ -542,7 +542,7 @@ plt.suptitle("My Graph")
 plt.show()
 ```
 
-#### Scatter
+## Scatter
 
 1) **Creating Scatter plots**
 The scatter() function plots one dot for each observation. It needs two arrays of the same length, one for the values of the x-axis, and one for values on the y-axis
@@ -615,7 +615,7 @@ plt.show()
 ```
 
 
-#### Creating Bars
+## Bars Charts
 
 The bar() function takes arguments that describes the layout of the bars.
 The categories and their values represented by the first and second argument as arrays.
@@ -656,7 +656,7 @@ plt.barh(x, y,color='red', width=0.1, height=0.1)
 plt.show()
 ```
 
-#### **Histograms**
+## **Histograms**
 
 A histogram is a graph showing frequency distributions.
 It is a graph showing the number of observations within each given interval.
@@ -674,7 +674,7 @@ plt.show()
 ```
 
 
-#### **Pie Charts**
+## **Pie Charts**
 
 1) **Creating Chart**
 
@@ -770,7 +770,7 @@ plt.legend(title="Four Fruits")
 plt.show() 
 ```
 
-#### **Box Plot**
+## **Box Plot**
 
 A Box Plot is also known as Whisker plot is created to display the summary of the set of data values having properties like minimum, first quartile, median, third quartile and maximum.
 
