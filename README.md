@@ -377,6 +377,147 @@ plt.show()
 
 4) **Labels and Title**
 
+**X-label, Y-label and Title**
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90])
+y = np.array([240, 250, 260])
+
+plt.plot(x, y)
+
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+plt.title("Sports Watch Data")
+
+plt.show()
+```
+
+**Set Font Properties for Title and Labels**
+
+The **fontdict** parameter in xlabel() , ylabel() and title() to set font properties for the title and labels.
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90])
+y = np.array([240, 250, 260])
+
+font1 = {'family':'serif','color':'blue','size':20}
+font2 = {'family':'serif','color':'darkred','size':15}
+
+plt.title("Sports Watch Data", fontdict = font1)
+plt.xlabel("Average Pulse", fontdict = font2)
+plt.ylabel("Calorie Burnage", fontdict = font2)
+
+plt.plot(x, y)
+plt.show()
+```
+
+**Position the Title**
+
+the **loc** parameter in title() to postion the title.
+
+legal values are: 'left', 'right', and 'center'. Default value is center.
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90])
+y = np.array([240, 250, 260])
+
+plt.title("Sports Watch Data", loc = 'left')
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+
+plt.plot(x, y)
+plt.show()
+```
+
+
+5) **Grid Lines**
+
+The grid() function to add grid lines to the plot
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90])
+y = np.array([240, 250, 260])
+
+plt.grid()
+plt.plot(x, y)
+plt.show()
+```
+
+**Specify Which Grid Lines to Display**
+
+The axis parameter in the grid() function to specify which grid lines to display.
+Legal values are: 'x', 'y' and 'both'. Default value is 'both'.
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90])
+y = np.array([240, 250, 260])
+
+plt.grid(axis='x')
+plt.plot(x, y)
+plt.show()
+```
+
+**Set Line Properties for the Grid**
+
+The line properties of the grid, like this: grid(color = 'color', linestyle = 'linestyle', linewidth = number).
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90])
+y = np.array([240, 250, 260])
+
+plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
+plt.plot(x, y)
+plt.show()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
