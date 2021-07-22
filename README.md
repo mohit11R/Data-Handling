@@ -241,20 +241,141 @@ Some of the major Pros of Matplotlib are:
    5) Very customizable in general
 
                 
+```
+import matplotlib.pyplot as plt
+
+%matplotlib inline
+
+```
+
+**Inbuild Functions and Methods**
+
+1) **Plotting x and y points**
+
+It is used to draw points in a diagram. It takes x,y parameters and we also give color parameter.
+
+```
+import matplotlib.pyplot as plt
+%matplotlib inline
+import numpy as np
+
+xpoints = np.array([1, 8])
+ypoints = np.array([3, 10])
+
+plt.plot(xpoints, ypoints,c="g")  # c is for color 
+
+```
 
 
+2) **Markers**
+
+The keyword argument marker to emphasize each point with a specified marker.
+
+** list of Markers**
+
+1) 'o' -- Circle
+2) '*' -- Star
+3) '.' -- Point
+4) ',' -- Pixels
+5) 'x' -- X
+6) 'X' -- X (filled)
+7) '+' -- Plus
+8) 'P' -- Plus (filled)
+9) 's' -- Square
+10) 'D' -- Diamond
+11) 'd' -- Diamond (thin)
+12) 'p' -- Pentagon
+13) 'H' -- hexagon
+14) 'h' -- Hexagon
+15) 'v' -- Triangle Down
+16) '^' -- Triangle Up
+17) '<' -- Triangle Left
+18) '>' -- Triangle Right
+19) '1' -- Tri down
+20) '2' -- Tri Up
+21) '3' -- Tri Left
+22) '4' -- Tri Right
+23) '|' -- Vline
+24) '_' -- Hline
+
+```
+Example
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+import numpy as np
+
+xpoints = np.array([1, 8])
+ypoints = np.array([3, 10])
+
+plt.plot(xpoints, ypoints,marker="*")
+
+```
+
+** Format String FMT**
+
+1) You can use also use the shortcut string notation parameter to specify the marker.
+2) This parameter is also called fmt, and is written with this syntax: **marker|line|color**
+
+```
+Example 
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+import numpy as np
+
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, 'o:r')
+
+```
 
 
+3) **LineStyle**
+
+The Keyword argument linestyle or shorter ls to change the style of the plotted line
+
+```
+Example
+
+plt.plot(ypoints, linestyle = 'dashed')
+```
+
+**Shorter Syntax**
+
+1) linestyle can be written as **ls**
+2) dotted can be written as **:**
+3) dashed can be written as **--**
+
+**List of Styles**
+
+1) 'solid' (dotted) -- **"-"**
+2) 'dotted'         -- **":"**
+3) 'dashed'         -- **"--"**
+4) 'dashdot'        -- **"-."**
+5) 'None'           -- **"or"**
 
 
+**Line Width**
+
+The keyword argument linewidth or the shorter lw to change the width of the line
+
+```
+Example
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, linewidth = '20.5')
+plt.show()
+```
 
 
-
-
-
-
-
-
+4) **Labels and Title**
 
 
 
