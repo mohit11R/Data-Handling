@@ -29,6 +29,7 @@
     3) Mean , Variance , Standard Deviation
     4) Dot and Cross product of two arrays
     5) Inner and Outer product of two arrays
+    6) Sin and Cos functions
 
 13) **Polynomials functions** --
     
@@ -223,6 +224,10 @@ df=pd.read_pickle(data)
 
 df_excel.to_pickle(data)
 ```
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# MatplotLib Library
 
 
 
