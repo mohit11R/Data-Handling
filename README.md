@@ -1,10 +1,17 @@
 # Data Handling
 
-### Practice And Resources
+### Resources
 
-1) Hackerrank -- https://www.hackerrank.com/domains/python?filters%5Bsubdomains%5D%5B%5D=numpy
-2) Numpy documentation -- https://numpy.org/doc/
-3) Pandas documentation -- https://pandas.pydata.org/docs/
+1) Numpy documentation -- https://numpy.org/doc/
+2) Pandas documentation -- https://pandas.pydata.org/docs/
+3) MatplotLib documentation -- https://matplotlib.org/
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+### Practice
+
+1) NumPy Hackerrank -- https://www.hackerrank.com/domains/python?filters%5Bsubdomains%5D%5B%5D=numpy
+2) Pandas kaggle -- https://www.kaggle.com/learn/pandas
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
