@@ -278,7 +278,7 @@ plt.plot(xpoints, ypoints,c="g")  # c is for color
 
 The keyword argument marker to emphasize each point with a specified marker.
 
-** list of Markers**
+**list of Markers**
 
 1) 'o' -- Circle
 2) '*' -- Star
