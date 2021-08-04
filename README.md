@@ -5,6 +5,7 @@
 1) Numpy documentation -- https://numpy.org/doc/
 2) Pandas documentation -- https://pandas.pydata.org/docs/
 3) MatplotLib documentation -- https://matplotlib.org/
+4) Seaborn Documentation -- https://seaborn.pydata.org/
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
@@ -812,7 +813,7 @@ plt.boxplot(data,vert=True,patch_artist=False);
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Seaborne library
+# Seaborn: Statistical Data Visualization
 
 
 
