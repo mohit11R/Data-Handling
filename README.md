@@ -64,7 +64,7 @@
 Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structure and data analysis tools for the python programming language.
 
 ```
-<!-- Import libraries              -->
+<!-- Import libraries -->
              import pandas as pd
              import numpy as np
 ```
