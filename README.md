@@ -801,6 +801,7 @@ data = [np.random.normal(0, std, 100) for std in range(1, 4)]
 
 # rectangular box plot
 plt.boxplot(data,vert=True,patch_artist=False);
+plt.show()
 ```
 
 
